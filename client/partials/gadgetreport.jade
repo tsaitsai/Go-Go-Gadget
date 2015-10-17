@@ -1,0 +1,22 @@
+div
+  h2 Gadget Report
+  img(src="/images/goGoGadget.png" alt="Go Go Gadget picture")
+  .scores
+    md-content
+      p Left Hand - Score {{leftHand.state}}
+      md-progress-linear(md-mode="determinate" value="{{leftHand.state}}")
+    md-content
+      p Right Hand - Score: {{rightHand.state}}
+      md-progress-linear(md-mode="determinate" value="{{rightHand.state}}")
+    md-content
+      p Left Foot - Score: {{leftFoot.state}}
+      md-progress-linear(md-mode="determinate" value="{{leftFoot.state}}")
+    md-content
+      p Right Foot - Score: {{rightFoot.state}}
+      md-progress-linear(md-mode="determinate" value="{{rightFoot.state}}")
+    md-content
+      p Ear - Score: {{ear.state}}
+      md-progress-linear(md-mode="determinate" value="{{ear.state}}")
+    md-content
+      p Nose - Score: {{nose.state}}
+      md-progress-linear(md-mode="determinate" value="{{nose.state}}")
