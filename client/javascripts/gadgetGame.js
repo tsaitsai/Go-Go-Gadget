@@ -1,4 +1,4 @@
-app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$timeout', function($scope,$http,$location,$timeout){
+app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$interval', function($scope,$http,$location,$interval){
   $http({
     method: 'GET',
     url: '/gogogadget/score'
@@ -53,13 +53,22 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$timeout', fun
     $location.url('/game');
   };
 
+  $scope.readImages = function() {
+    $http({
+      method: 'GET',
+      url: '/gogogadget/image'
+    }).then(function(res){
+      $scope.gameMode = res.data.mode;
+      $scope.imgurl = $scope.objectURL[res.data.imgurl];
+    });
+
   $scope.objectURL = {
     '00': '/images/en_right_hand.png',
     '01':'/images/en_left_hand.png',
     '02':'/images/en_right_foot.png',
     '03':'/images/en_left_foot.png',
     '04': '/images/en_ear_big.png',
-    '05': '/images/en_heart_big.png'
+    '05': '/images/en_heart_big.png',
     '10': '/images/ch_right_hand.png',
     '11':'/images/ch_left_hand.png',
     '12':'/images/ch_right_foot.png',
@@ -86,6 +95,6 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$timeout', fun
   };
 
   $scope.readImages();
-  var image = setInterval($scope.readImages(), 5000);
+  $interval(function(){$scope.readImages();}, 3000);
 
 }]);

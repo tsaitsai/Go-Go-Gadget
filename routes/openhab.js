@@ -72,12 +72,10 @@ router.post('/setlanguage', function(req, res, next){
   }
 });
 
-<<<<<<< HEAD
 router.post('/image', function(err, response, body) {
   res.send('12');
 });
 
-=======
 router.get('/image', function(req, res, next) {
   var imgcode = '',
       mode = false;
@@ -95,6 +93,5 @@ router.get('/image', function(req, res, next) {
     });
   });
 });
->>>>>>> cbfae833a3b7d608c8b1655672f0c470a5b8e0c1
 
 module.exports = router;
