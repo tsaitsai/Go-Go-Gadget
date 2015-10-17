@@ -10,27 +10,27 @@
     <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
 </head>
 <body>
-<div ng-app="myApp">
+    <div ng-app="myApp">
 
-    <div class="container"></div>
+        <div class="container">
 
+            <h1 class="greeting">Welcome!</h1>
+            <div class="imageContainer">
+                <img src="/images/goGoGadget.png" alt="Go Go Gadget picture">
+            </div>
 
-    <h1 class="greeting">Welcome!</h1>
-    <div class="imageContainer">
-        <img src="/images/goGoGadget.png" alt="Go Go Gadget picture">
+            <md-content layout="column">
+                <md-button class="md-button md-raised md-primary button" ng-click="onClickPlay()">Game Play</md-button>
+                <div class="md-button md-raised md-accent button" ng-click="onClickAuto()">Personal Assistant</div>
+            </md-content>
+
+        </div>
+
     </div>
 
-    <md-content layout="column">
-        <md-button class="md-button md-raised md-primary button" ng-click="onClickPlay()">Game Play</md-button>
-        <div class="md-button md-raised md-accent button" ng-click="onClickAuto()">Personal Assistant</div>
-    </md-content>
+        <script type="text/javascript" src="/vendors/angular/angular.js"></script>
+        <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="/javascripts/app.min.js"></script>
 
-
-</div>
-
-<script type="text/javascript" src="/vendors/angular/angular.js"></script>
-<script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
-<script type="text/javascript" src="/javascripts/app.min.js"></script>
-
-</body>
+    </body>
 </html>

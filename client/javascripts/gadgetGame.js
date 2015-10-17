@@ -48,4 +48,8 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', function($scope
       })
     };
 
+  $scope.objectURL = {
+    '12': '/images/ch_ear_big.png'
+  }
+
 }]);
