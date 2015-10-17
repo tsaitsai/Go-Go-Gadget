@@ -11,6 +11,12 @@ router.get('/score', function(req, res, next){
   });
 });
 
+router.get('/resetscore', function(req, res, next){
+  request('http://localhost:8080/CMD?itm_btn_score_reset=OFF', function(err, response,  body){
+    res.json(body);
+  });
+});
+
 router.post('/mode', function(req, res, next){
   console.log(req.body.mode);
   switch(req.body.mode) {
@@ -33,10 +39,30 @@ router.post('/mode', function(req, res, next){
       });
       break;
     default:
-      request('http://localhost:8080/CMD?itm_num_func_mode=0', function(err, httpRes, body){
+      request('http://localhost:8080/CMD?itm_num_func_mode=0', function(err, response, body){
         res.json(body);
       });
   }
 });
+
+router.post('/setlanguage', function(req, res, next){
+  switch(req.body.lang){
+    case 'en':
+      request('http://localhost:8080/CMD?itm_num_game_lang=0', function(err, response, body){
+        res.json(body);
+      });
+      break;
+    case 'ch':
+      request('http://localhost:8080/CMD?itm_num_game_lang=1', function(err, response, body){
+        res.json(body);
+      });
+      break;
+    case 'kl':
+      request('http://localhost:8080/CMD?itm_num_game_lang=2', function(err, response, body){
+        res.json(body);
+      });
+      break;
+  }
+})
 
 module.exports = router;
