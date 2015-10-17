@@ -1,9 +1,8 @@
-app.controller('gadgetGameRep', ['$scope', '$http', '$location', function($scope,$http,$location){
+app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$timeout', function($scope,$http,$location,$timeout){
   $http({
     method: 'GET',
     url: '/gogogadget/score'
   }).then(function(res){
-    console.log(res.data);
     res.data.forEach(function(item, index){
       switch (item.name){
         case 'itm_num_G1_HandLeft_Score':
@@ -52,10 +51,22 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', function($scope
 
   $scope.onClickPlay = function() {
     $location.url('/game');
-    };
+  };
+
+  $scope.readImages = function() {
+    $http({
+      method: 'GET',
+      url: '/gogogadget/image'
+    }).then(function(res){
+      console.log(res.data);
+      $scope.gameMode = res.data.mode;
+      $scope.imgurl = $scope.objectURL[res.data.imgurl];
+    })
+  }
 
   $scope.objectURL = {
     '12': '/images/ch_ear_big.png'
-  }
-
+  };
+  $scope.readImages();
+  var image = setInterval($scope.readImages(), 5000);
 }]);
