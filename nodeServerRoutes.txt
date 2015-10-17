@@ -1,0 +1,7 @@
+url:/gogogadget/score  method:get  input:none  response:all items
+
+url:/gogogadget/resetscore  method:get  input:none  response:"<root></root>"
+
+url:/gogogadget/mode  method:post  input:off || game || auto  response:"<root></root>"
+
+url:/gogogadget/setlanguage  method:post  input:en || ch || kl  response:"<root></root>"

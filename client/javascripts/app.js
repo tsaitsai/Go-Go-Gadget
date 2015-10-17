@@ -13,9 +13,14 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', '$mdThemingP
                 templateUrl: '/views/gadgetreport.html',
                 controller: 'gadgetGameRep'
             }).
+
             when('/automation', {
                 templateUrl: '/views/gadgetauto.html',
                 controller: 'gadgetAutomation'
+            }).
+            when('/testroutes', {
+                templateUrl: '/views/testroutes.html',
+                controller: 'testRoutes'
             }).
             otherwise({
                 redirectTo: '/home'
