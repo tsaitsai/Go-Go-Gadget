@@ -12,3 +12,26 @@ a {
   width: 20%;
   transform: rotate(90deg);
 }
+
+
+
+.button {
+  height: 50px;
+  width: 200px;
+  border-radius:10px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
+}
+
+.greeting {
+  color: lightskyblue;
+}
+
+.play {
+  background-color:lightskyblue;
+}
+
+.auto {
+  background-color:orange;
+}

@@ -19,7 +19,8 @@ gulp.task('default', ['process-js',
                       'process-angular-aria',
                       'process-angular-route',
                       'process-jade',
-                      'process-images'],
+                      'process-images',
+                      'process-html'],
                       function(){
                         gutil.log('Gulped!');
 });
@@ -64,6 +65,10 @@ gulp.task('process-jade', function(){
   return gulp.src('./client/partials/*.jade')
   .pipe(jade())
   .pipe(gulp.dest('./public/views'))
+});
+gulp.task('process-html', function(){
+    return gulp.src('./client/partials/*.html')
+        .pipe(gulp.dest('./public/views'))
 });
 gulp.task('process-angular-route', function(){
   return gulp.src('./node_modules/angular-route/angular-route.min.*')
