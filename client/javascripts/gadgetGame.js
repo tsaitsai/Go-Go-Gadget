@@ -27,4 +27,25 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', function($scope
       };
     });
   });
+
+  $scope.onClickAuto = function() {
+        $http({
+          method: 'POST',
+          url: '/gogogadget/mode',
+          data: {mode: 'auto'}
+        }).then(function(res){
+          $location.url('/automation')
+        })
+    };
+
+  $scope.onClickPlay = function() {
+        $http({
+            method: 'POST',
+            url: '/gogogadget/mode',
+            data: {mode: 'game'}
+      }).then(function(res){
+        $location.url('/game')
+      })
+    };
+
 }]);

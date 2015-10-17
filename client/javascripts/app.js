@@ -1,13 +1,13 @@
 app = angular.module('goGoGadget', ['ngRoute', 'ngMaterial']);
 
-app.config(['$routeProvider', '$locationProvider', '$httpProvider',
-    function ($routeProvider, $locationProvider, $httpProvider) {
+app.config(['$routeProvider', '$locationProvider', '$httpProvider', '$mdThemingProvider',
+    function ($routeProvider, $locationProvider, $httpProvider, $mdThemingProvider) {
         $locationProvider.html5Mode(true);
 
         $routeProvider.
             when('/home', {
                 templateUrl: '/views/gadgethome.html',
-                controller: 'landing'
+                controller: 'gadgetGameRep'
             }).
             when('/game', {
                 templateUrl: '/views/gadgetreport.html',
@@ -20,4 +20,9 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider',
             otherwise({
                 redirectTo: '/home'
             });
+
+        $mdThemingProvider.theme('default')
+            .primaryPalette('light-blue')
+            .accentPalette('orange');
     }]);
+
