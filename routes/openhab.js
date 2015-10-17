@@ -11,6 +11,13 @@ router.get('/score', function(req, res, next){
   });
 });
 
+router.get('/text', function(req, res, next){
+  request('http://192.168.100.94:8080/rest/items/?type=json', function(err, response, body){
+    var parsBody = JSON.parse(body);
+    res.json(parsBody.item);
+  });
+});
+
 router.get('/resetscore', function(req, res, next){
   request('http://localhost:8080/CMD?itm_btn_score_reset=OFF', function(err, response,  body){
     res.json(body);
@@ -64,5 +71,7 @@ router.post('/setlanguage', function(req, res, next){
       break;
   }
 });
+
+router.post('/')
 
 module.exports = router;

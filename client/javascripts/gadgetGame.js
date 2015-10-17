@@ -6,46 +6,52 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', function($scope
     console.log(res.data);
     res.data.forEach(function(item, index){
       switch (item.name){
-        case 'itm_num_G1_AL_S_Score':
+        case 'itm_num_G1_HandLeft_Score':
           $scope.leftHand = item;
           break;
-        case 'itm_num_G1_AR_S_Score':
+        case 'itm_num_G1_HandRight_Score':
           $scope.rightHand = item;
           break;
-        case 'itm_num_G1_LL_S_Score':
+        case 'itm_num_G1_FootLeft_Score':
           $scope.leftFoot = item;
           break;
-        case 'itm_num_G1_LR_S_Score':
+        case 'itm_num_G1_FootRight_Score':
           $scope.rightFoot = item;
           break;
-        case 'itm_num_G1_EA_S_Score':
+        case 'itm_num_G1_Ear_Score':
           $scope.ear = item;
           break;
-        case 'itm_num_G1_EX_S_Score':
+        case 'itm_num_G1_Nose_Score':
           $scope.nose = item;
           break;
       };
     });
   });
 
+  $scope.updateMode = function() {
+    $http({
+      method: 'POST',
+      url: '/gogogadget/mode',
+      data: {mode: $scope.mode}
+    }).then(function(res){
+    })
+  };
+
+  $scope.updateLang = function() {
+    $http({
+      method: 'POST',
+      url: '/gogogadget/setlanguage',
+      data: {lang: $scope.lang}
+    }).then(function(res){
+    })
+  };
+
   $scope.onClickAuto = function() {
-        $http({
-          method: 'POST',
-          url: '/gogogadget/mode',
-          data: {mode: 'auto'}
-        }).then(function(res){
-          $location.url('/automation')
-        })
+    $location.url('/automation');
     };
 
   $scope.onClickPlay = function() {
-        $http({
-            method: 'POST',
-            url: '/gogogadget/mode',
-            data: {mode: 'game'}
-      }).then(function(res){
-        $location.url('/game')
-      })
+    $location.url('/game');
     };
 
 }]);

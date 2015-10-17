@@ -21,10 +21,37 @@
     </div>
 
     <md-content layout="column">
-        <md-button class="md-button md-raised md-primary button" ng-click="onClickPlay()">Game Play</md-button>
-        <div class="md-button md-raised md-accent button" ng-click="onClickAuto()">Personal Assistant</div>
+      <md-input-container>
+        <label>Mode</label>
+        <md-select ng-model="mode" class='button' ng-change="updateMode()" >
+          <md-option value="off">
+            Off
+          </md-option>
+          <md-option value="game">
+            Game
+          </md-option>
+          <md-option value="auto">
+            Automation
+          </md-option>
+        </md-select>
+      </md-input-container>
+      <md-input-container ng-show="mode == 'game'">
+        <label>Language</label>
+        <md-select ng-model="lang" class='button' ng-change="updateLang()" >
+          <md-option value="en">
+            English
+          </md-option>
+          <md-option value="ch">
+            Chinese
+          </md-option>
+          <md-option value="kl">
+            Klingon
+          </md-option>
+        </md-select>
+      </md-input-container>
+        <md-button class="md-button md-raised md-primary button" ng-click="onClickPlay()">Game Score</md-button>
+        <md-button class="md-button md-raised md-accent button" ng-click="onClickAuto()">Personal Assistant</md-button>
     </md-content>
-
 
 </div>
 
