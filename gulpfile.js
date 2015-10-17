@@ -9,7 +9,7 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var uglifyCss = require('gulp-minify-css');
 var jade = require('gulp-jade');
-
+//when gulp is run it will run these processes by default
 gulp.task('default', ['process-js',
                       'process-css',
                       'process-angular',

@@ -9,6 +9,10 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider',
                 templateUrl: '/views/gadgetreport.html',
                 controller: 'gadgetGameRep'
             }).
+            when('/testroutes', {
+                templateUrl: '/views/testroutes.html',
+                controller: 'testRoutes'
+            }).
             otherwise({
                 redirectTo: '/'
             });
