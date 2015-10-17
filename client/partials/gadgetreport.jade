@@ -6,7 +6,7 @@ div
   .scores
     md-content
       p Left Hand - Score {{leftHand.state}}
-      md-progress-linear(class="md-accent" md-mode="determinate" value="{{leftHand.state}}")
+      md-progress-linear(md-mode="determinate" value="{{leftHand.state}}")
     md-content
       p Right Hand - Score: {{rightHand.state}}
       md-progress-linear(md-mode="determinate" value="{{rightHand.state}}")
