@@ -7,6 +7,7 @@ var bodyParser = require('body-parser');
 
 var routes = require('./routes/index');
 var openHab = require('./routes/openhab');
+var auto = require('./routes/auto');
 
 var app = express();
 
@@ -23,6 +24,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
+app.use('/gogogadget/auto', auto);
 app.use('/gogogadget', openHab);
 
 // catch 404 and forward to error handler
