@@ -1,7 +1,8 @@
 div
   a(class="md-button md-primary" href="/testroutes")
   h2 Gadget Report
-  img(src="/images/goGoGadget.png" alt="Go Go Gadget picture")
+  img(ng-hide="gameMode" src="/images/goGoGadget.png" alt="Go Go Gadget picture")
+  img(ng-show="gameMode" src="{{imgurl}}" alt="{{imgurl}}")
   .scores
     md-content
       p Left Hand - Score {{leftHand.state}}
@@ -19,5 +20,5 @@ div
       p Ear - Score: {{ear.state}}
       md-progress-linear(md-mode="determinate" value="{{ear.state}}")
     md-content
-      p Nose - Score: {{nose.state}}
+      p Heart - Score: {{nose.state}}
       md-progress-linear(md-mode="determinate" value="{{nose.state}}")
