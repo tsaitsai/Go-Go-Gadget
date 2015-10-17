@@ -2,8 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7df4d393-a197-429d-93fd-ecb9bb37e680" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/en_ear_big.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/en_heart_big.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/en_left_foot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/en_right_foot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/en_right_hand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/k_ear.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/k_heart.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/k_left_foot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/k_left_hand.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/k_right_foot.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/client/images/k_right_hand.png" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/javascripts/gadgetGame.js" afterPath="$PROJECT_DIR$/client/javascripts/gadgetGame.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/routes/openhab.js" afterPath="$PROJECT_DIR$/routes/openhab.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/client/partials/gadgetreport.jade" afterPath="$PROJECT_DIR$/client/partials/gadgetreport.jade" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="Go-Go-Gadget.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -24,43 +36,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gadgetreport.jade" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/partials/gadgetreport.jade">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.84">
-              <caret line="5" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="62" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gadgethome.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/partials/gadgethome.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-31.25">
-              <caret line="60" column="0" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gadgetauto.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/partials/gadgetauto.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gadgetGame.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="gadgetGame.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/client/javascripts/gadgetGame.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.89311165">
-              <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+            <state vertical-scroll-proportion="-5.4">
+              <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
               <folding />
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_right_foot.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/images/en_right_foot.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_right_hand.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/images/en_right_hand.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_ear_big.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/images/en_ear_big.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_heart_big.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/images/en_heart_big.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="en_left_foot.png" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/client/images/en_left_foot.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="k_ear.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/images/k_ear.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ch_right_hand.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/images/ch_right_hand.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="k_heart.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/client/images/k_heart.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -69,56 +107,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="style.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/stylesheets/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="openhab.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/openhab.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-14.84">
-              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/client/javascripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="gadgethome.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/views/gadgethome.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-30.083334">
-              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
               <folding />
             </state>
           </provider>
@@ -138,6 +126,7 @@
         <option value="$PROJECT_DIR$/client/javascripts/app.js" />
         <option value="$PROJECT_DIR$/client/partials/gadgethome.html" />
         <option value="$PROJECT_DIR$/routes/openhab.js" />
+        <option value="$PROJECT_DIR$/client/partials/gadgetreport.jade" />
         <option value="$PROJECT_DIR$/client/javascripts/gadgetGame.js" />
       </list>
     </option>
@@ -150,7 +139,7 @@
     <order />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="151" />
+    <option name="x" value="141" />
     <option name="y" value="23" />
     <option name="width" value="1255" />
     <option name="height" value="800" />
@@ -319,6 +308,11 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/client/images" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
       <method />
@@ -364,10 +358,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="151" y="23" width="1255" height="800" extended-state="0" />
-    <editor active="true" />
+    <frame x="141" y="23" width="1255" height="800" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17423014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17423014" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -390,7 +384,9 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager />
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
@@ -516,26 +512,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/partials/gadgetreport.jade">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.84">
-          <caret line="5" column="2" selection-start-line="3" selection-start-column="2" selection-end-line="3" selection-end-column="62" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/partials/gadgetauto.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/javascripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
           <folding />
         </state>
       </provider>
@@ -556,6 +536,37 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/javascripts/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/partials/gadgetreport.jade">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-12.04">
+          <caret line="21" column="36" selection-start-line="21" selection-start-column="36" selection-end-line="21" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/k_ear.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/ch_right_hand.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/k_heart.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/javascripts/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -566,10 +577,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/javascripts/gadgetGame.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.89311165">
-          <caret line="73" column="5" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+        <state vertical-scroll-proportion="-5.4">
+          <caret line="58" column="3" selection-start-line="58" selection-start-column="3" selection-end-line="58" selection-end-column="3" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/en_right_foot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/en_right_hand.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/en_ear_big.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/en_heart_big.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/images/en_left_foot.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
       </provider>
     </entry>
   </component>

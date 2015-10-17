@@ -67,12 +67,12 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', function($scope
     '13':'/images/ch_left_foot.png',
     '14': '/images/ch_ear_big.png',
     '15': '/images/ch_heart_big.png',
-    '20': '/images/ch_right_hand.png',
-    '21':'/images/ch_left_hand.png',
-    '22':'/images/ch_right_foot.png',
-    '23':'/images/ch_left_foot.png',
-    '24': '/images/ch_ear_big.png',
-    '25': '/images/ch_heart_big.png'
+    '20': '/images/k_right_hand.png',
+    '21':'/images/k_left_hand.png',
+    '22':'/images/k_right_foot.png',
+    '23':'/images/k_left_foot.png',
+    '24': '/images/k_ear.png',
+    '25': '/images/k_heart.png'
   }
 
 }]);
