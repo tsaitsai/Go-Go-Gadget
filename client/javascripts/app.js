@@ -5,11 +5,19 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider',
         $locationProvider.html5Mode(true);
 
         $routeProvider.
-            when('/', {
+            when('/home', {
+                templateUrl: '/views/gadgethome.html',
+                controller: 'landing'
+            }).
+            when('/game', {
                 templateUrl: '/views/gadgetreport.html',
                 controller: 'gadgetGameRep'
             }).
+            when('/automation', {
+                templateUrl: '/views/gadgetauto.html',
+                controller: 'gadgetAutomation'
+            }).
             otherwise({
-                redirectTo: '/'
+                redirectTo: '/home'
             });
     }]);
