@@ -74,6 +74,7 @@ router.post('/setlanguage', function(req, res, next){
 
 router.post('/image', function(err, response, body) {
   res.send('12');
-}
+});
+
 
 module.exports = router;
