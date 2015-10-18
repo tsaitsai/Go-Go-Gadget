@@ -1,0 +1,39 @@
+<html lang="en" ng-app="goGoGadget">
+
+<head>
+    <meta charset="utf-8">
+    <title>Welcome!</title>
+    <meta name="description" content="Landing Page for GoGoGadget">
+    <link rel="stylesheet" type="text/css" href="../stylesheets/style.css">
+</head>
+<body>
+<h1 class="greeting">Welcome!</h1>
+<div class="imageContainer">
+    <img src="/images/goGoGadget.png" alt="Go Go Gadget picture">
+</div>
+
+<md-content layout="column">
+        <md-input-container>
+
+                <img src="/images/light-311119_640.png" alt="light bulb">
+
+                <md-select ng-model="mode" class='button' ng-change="updateLight()" >
+                    <md-option value="ON">
+                        ON
+                    </md-option>
+                    <md-option value="OFF">
+                        OFF
+                    </md-option>
+                </md-select>
+        </md-input-container>
+
+    <!--<md-button class="md-button md-raised md-primary button" ng-click="onClickON()">Light ON</md-button>-->
+    <!--<md-button class="md-button md-raised md-primary button" ng-click="onClickOFF()">Light OFF</md-button>-->
+    <md-button class="md-button md-raised md-accent button" ng-click="onClickAlert()">Alert</md-button>
+</md-content>
+
+        <script type="text/javascript" src="/vendors/angular/angular.js"></script>
+        <script type="text/javascript" src="/vendors/angular-route/angular-route.min.js"></script>
+        <script type="text/javascript" src="/javascripts/app.min.js"></script>
+    </body>
+</html>

@@ -16,7 +16,7 @@ app.config(['$routeProvider', '$locationProvider', '$httpProvider', '$mdThemingP
 
             when('/automation', {
                 templateUrl: '/views/gadgetauto.html',
-                controller: 'gadgetAutomation'
+                controller: 'gadgetGameRep'
             }).
             when('/testroutes', {
                 templateUrl: '/views/testroutes.html',

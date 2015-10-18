@@ -45,6 +45,19 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$interval', fu
     })
   };
 
+  //**** CHECK w/ FED   *****
+
+  $scope.updateLight = function(){
+    $http({
+      method: 'POST',
+      url: '/gogogadget/lightState',
+      //data: {state: $scope.state}
+    }).then(function(res){
+    })
+  };
+
+  //**** CHECK w/ FED  *****
+
   $scope.onClickAuto = function() {
     $location.url('/automation');
     };
@@ -53,14 +66,15 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$interval', fu
     $location.url('/game');
   };
 
-  $scope.readImages = function() {
-    $http({
-      method: 'GET',
-      url: '/gogogadget/image'
-    }).then(function(res){
-      $scope.gameMode = res.data.mode;
-      $scope.imgurl = $scope.objectURL[res.data.imgurl];
-    });
+  //$scope.readImages = function() {
+  //  $http({
+  //    method: 'GET',
+  //    url: '/gogogadget/image'
+  //  }).then(function (res) {
+  //    $scope.gameMode = res.data.mode;
+  //    $scope.imgurl = $scope.objectURL[res.data.imgurl];
+  //  });
+  //}
 
   $scope.objectURL = {
     '00': '/images/en_right_hand.png',
