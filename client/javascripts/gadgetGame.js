@@ -97,16 +97,16 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$interval', fu
     '25': '/images/k_heart.png'
   }
 
-  $scope.readImages = function() {
-    $http({
-      method: 'GET',
-      url: '/gogogadget/image'
-    }).then(function(res){
-      console.log(res.data);
-      $scope.gameMode = res.data.mode;
-      $scope.imgurl = $scope.objectURL[res.data.imgurl];
-    })
-  };
+  //$scope.readImages = function() {
+  //  $http({
+  //    method: 'GET',
+  //    url: '/gogogadget/image'
+  //  }).then(function(res){
+  //    console.log(res.data);
+  //    $scope.gameMode = res.data.mode;
+  //    $scope.imgurl = $scope.objectURL[res.data.imgurl];
+  //  })
+  //};
 
   $scope.readImages();
   $interval(function(){$scope.readImages();}, 3000);
