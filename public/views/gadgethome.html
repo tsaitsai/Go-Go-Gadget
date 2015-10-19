@@ -41,6 +41,17 @@
           </md-option>
         </md-select>
       </md-input-container>
+      <md-input-container ng-show="mode == 'game'">
+        <label>Game Mode</label>
+        <md-select ng-model="game_mode" class='button' ng-change="updateGameMode()" >
+          <md-option value="0">
+            Learn
+          </md-option>
+          <md-option value="1">
+            Test
+          </md-option>
+        </md-select>
+      </md-input-container>
         <md-button class="md-button md-raised md-primary button" ng-click="onClickPlay()">Game Score</md-button>
         <md-button class="md-button md-raised md-accent button" ng-click="onClickAuto()">Personal Assistant</md-button>
     </md-content>

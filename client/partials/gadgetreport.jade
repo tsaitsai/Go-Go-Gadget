@@ -22,3 +22,5 @@ div
     md-content
       p Heart - Score: {{nose.state}}
       md-progress-linear(md-mode="determinate" value="{{nose.state}}")
+    md-button(class="md-button md-raised md-accent button" href="/") Home
+    md-button(class="md-button md-raised md-accent button" ng-click="onClickReset()") Reset Score

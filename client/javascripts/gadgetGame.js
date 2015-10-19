@@ -1,4 +1,5 @@
 app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$interval', function($scope,$http,$location,$interval){
+  var reset = "OFF";
   $http({
     method: 'GET',
     url: '/gogogadget/score'
@@ -47,7 +48,7 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$interval', fu
 
   $scope.onClickAuto = function() {
     $location.url('/automation');
-    };
+  };
 
   $scope.onClickPlay = function() {
     $location.url('/game');
@@ -56,33 +57,55 @@ app.controller('gadgetGameRep', ['$scope', '$http', '$location', '$interval', fu
   $scope.readImages = function() {
     $http({
       method: 'GET',
-      url: '/gogogadget/image'
+      url: '/gogogadget/image/' + (Math.floor(Math.random() * 10000000000)),
     }).then(function(res){
+      console.log(res.data.imgurl);
       $scope.gameMode = res.data.mode;
       $scope.imgurl = $scope.objectURL[res.data.imgurl];
     })
+  };
+
+  $scope.updateGameMode = function (){
+    $http({
+      method: 'POST',
+      url: '/gogogadget/setmode',
+      data: {game_mode: $scope.game_mode}
+    }).then(function(res){
+    })
+  };
+  $scope.onClickReset = function(){
+    console.log('clicked');
+    reset = !reset;
+    $http({
+      method: 'GET',
+      url: '/gogogadget/resetscore'
+    }).then(function(){
+      $location.url('/');
+    })
+  }
 
   $scope.objectURL = {
     '00': '/images/en_right_hand.png',
-    '01':'/images/en_left_hand.png',
-    '02':'/images/en_right_foot.png',
-    '03':'/images/en_left_foot.png',
+    '01': '/images/en_left_hand.png',
+    '02': '/images/en_right_foot.png',
+    '03': '/images/en_left_foot.png',
     '04': '/images/en_ear_big.png',
-    '05': '/images/en_heart_big.png'
+    '05': '/images/en_heart_big.png',
     '10': '/images/ch_right_hand.png',
-    '11':'/images/ch_left_hand.png',
-    '12':'/images/ch_right_foot.png',
-    '13':'/images/ch_left_foot.png',
+    '11': '/images/ch_left_hand.png',
+    '12': '/images/ch_right_leg.png',
+    '13': '/images/ch_left_leg.png',
     '14': '/images/ch_ear_big.png',
     '15': '/images/ch_heart_big.png',
     '20': '/images/k_right_hand.png',
-    '21':'/images/k_left_hand.png',
-    '22':'/images/k_right_foot.png',
-    '23':'/images/k_left_foot.png',
+    '21': '/images/k_left_hand.png',
+    '22': '/images/k_right_foot.png',
+    '23': '/images/k_left_foot.png',
     '24': '/images/k_ear.png',
     '25': '/images/k_heart.png'
-  };
-
-  $scope.readImages();
-  $interval(function(){$scope.readImages();}, 3000);
+  }
+  //
+  // $interval(function(){
+  //   $scope.readImages();
+  // }, 5000);
 }]);
